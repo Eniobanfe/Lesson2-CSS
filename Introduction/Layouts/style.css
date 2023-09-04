@@ -3,38 +3,69 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .wrapper {
-    background-color: #f2f2f2;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    height: fit-content;
 }
-
 header {
     display: flex;
     flex-direction: column;
-    background-color: #ddd;
-    padding: 20px;
 }
-
 .header-bar {
+    padding: 0 10px;
+    height: 64px;
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
-
 .header-bar .logo {
-    width: 100px;
-    padding: 8px 0;
-    background-color: grey;
+    height: 34px;
+    width: 15%;
+    background-color: #999;
+}
+.header-bar .spacer {
+    width: 20%;
 }
 .header-bar nav {
-    width: 300px;
-    padding: 8px 0;
-    background-color: grey;
+    width: 48%;
+    height: 28px;
+    background-color: #999;
 }
 .header-bar .btn {
-    width: 100px;
-    padding: 8px 0;
-    background-color: grey;
+    width: 10%;
+    height: 28px;
+    background-color: #999;
+}
+.banner {
+    height: 250px;
+    background-color: #bbb;
+}
+content {
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+content .card {
+    width: 32%;
+    height: 120px;
+    flex-grow: 1;
+    margin: 0;
+    background-color: #bbb;
+}
+footer {
+    height: 64px;   
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+footer .widget {
+    width: 33%;
+    height: 40px;
+    background-color: #999;
 }
