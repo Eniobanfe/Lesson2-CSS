@@ -15,16 +15,16 @@ header {
     flex-direction: column;
 }
 .header-bar {
-    padding: 0 10px;
     height: 64px;
+    padding: 0 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 .header-bar .logo {
-    height: 34px;
     width: 15%;
+    height: 34px;
     background-color: #999;
 }
 .header-bar .spacer {
