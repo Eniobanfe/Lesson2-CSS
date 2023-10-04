@@ -3,43 +3,61 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!--3. Using an external stylesheet or CSS file-->
 		<link rel="stylesheet" href="style.css" />
 		<title>CSS Selectors</title>
-		<!-- 2. Adding CSS Styles with the style tag-->
-		<!--
-      <style>
-			span {
-				 color: red;
-			}
-		</style>
-    -->
 	</head>
 	<body>
-		<!-- 1. Adding Inline Styles to an HTML Element-->
-		<h1 style="color: red">CSS Selectors</h1>
-		<p>
-			<span>Lorem</span> ipsum dolor sit amet consectetur adipisicing elit.
-			Facere illum rem quae asperiores distinctio, nobis quas cum ipsum deserunt
-			cumque odio, nulla corrupti facilis, saepe quo! Obcaecati perferendis
-			nobis nesciunt.
-		</p>
-		<p>
-			<span>Lorem</span> ipsum, dolor sit amet consectetur adipisicing elit.
-			Possimus asperiores eligendi fuga voluptatem quam labore minus,
-			perferendis recusandae soluta nobis ad debitis aspernatur quia tenetur
-			mollitia quos ut iure optio?
-		</p>
-		<p>
-			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error aut illo
-			id nobis natus iste est eum sequi fuga doloremque sint rem et quod harum
-			in dignissimos eaque, laborum quidem!
-		</p>
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Error pariatur
-			quas totam, incidunt minima voluptate, aspernatur provident, ducimus
-			aliquam temporibus corrupti. Dolorum assumenda perspiciatis, dolorem
-			dignissimos molestias deserunt totam voluptatum?
-		</p>
+		<!--
+Note that general font color should black;
+Tip: Default font-size of browser is 16px;
+ 1. Add a class attribute called "wrapper" to the div element and style the div with following: padding 20px all round;
+ 2. Change the text color of the title to brown, and set the font-size a maxium 1.5 times the current size 
+ 3 Give each paragraph a border 1px solid with color brown add a minumum padding 2px;
+ 4. Alternate the background of each paragraph such that even paragraphs have a background color of light shade of brown and a font-color of white; Tips Use opacity rule or rgba color for the background to give good contrast;
+ 5. Change the default outline color of the input elements to a shade of brown when the element has focus.
+ 6. Give the button a background color of Brown and font color of white. Add a hover state to change the backgound color to darker shade of brown;
+ 7. Add all Link states styles to the anchor elements-->
+
+		<div>
+			<h2 id="title">CSS Selectors - Assignment</h2>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores cumque
+				placeat veritatis praesentium nobis minus eum iure. Maiores magni, eaque
+				quis mollitia repellat voluptates, aliquid sint, atque explicabo odio
+				placeat.
+			</p>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				<span>Maiores cumque placeat</span> veritatis praesentium nobis minus
+				eum iure. Maiores magni, eaque quis mollitia repellat voluptates,
+				aliquid sint, atque explicabo odio placeat.
+			</p>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores cumque
+				placeat veritatis <span>praesentium nobis minus eum iure.</span> Maiores
+				magni, eaque quis mollitia repellat voluptates, aliquid sint, atque
+				explicabo odio placeat.
+				<a href="http://google.com">Google</a>
+				<a href="http://github.com">Github</a>
+				<a href="http://pinterest.com">Pinterest</a>
+			</p>
+			<form action="#">
+				<label>
+					name:
+					<input type="text" name="" id="" /> </label
+				><br /><br />
+				<label>
+					email:
+					<input type="email" name="" id="" />
+				</label>
+			</form>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				<span>Maiores cumque placeat veritatis praesentium</span> nobis minus
+				eum iure. Maiores magni, eaque quis mollitia repellat voluptates,
+				aliquid sint, atque explicabo odio placeat.
+			</p>
+			<button>Read more</button>
+		</div>
 	</body>
 </html>
