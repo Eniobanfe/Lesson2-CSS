@@ -4,6 +4,7 @@
 		"codespaces-contrib.codeswing",
 		"vsls-contrib.codetour",
 		"blackgirlbytes.deploy-to-github-pages",
-		"dbaeumer.vscode-eslint"
+		"dbaeumer.vscode-eslint",
+		"tinkertrain.theme-panda"
 	]
 }
