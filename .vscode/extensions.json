@@ -5,6 +5,7 @@
 		"vsls-contrib.codetour",
 		"blackgirlbytes.deploy-to-github-pages",
 		"dbaeumer.vscode-eslint",
-		"tinkertrain.theme-panda"
+		"tinkertrain.theme-panda",
+		"ms-vsliveshare.vsliveshare"
 	]
 }
