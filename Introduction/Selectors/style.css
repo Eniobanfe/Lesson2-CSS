@@ -1,6 +1,6 @@
 /* 
 0. element selector (any html tag)
-1. decendant selector (space)
+1. descendant selector (space)
 2. child selector (>)
 3. adjacent sibling selector(+)
 4. general sibling selector(~)
@@ -14,8 +14,12 @@
 6.0.0 Attribute selector 
 6.0.1 - Class Attribute (.)
 6.0.2 - ID Attribute (#)
+6.0.3 - General attribute selector [key="value"]
 
 */
+:root {
+	--theme-clr: rgba(165, 42, 42, 0.8);
+}
 html * {
 	margin: 0;
 	padding: 0;
@@ -34,16 +38,16 @@ p {
 }
 /* 2 */
 #title {
-	color: brown;
+	color: var(--theme-clr);
 }
 /* 3 */
 p {
-	border: 1px solid brown;
+	border: 1px solid var(--theme-clr);
 	padding: 12px;
 }
 /* 4 */
 p:nth-child(even) {
-	background-color: rgba(165, 42, 42, 0.8);
+	background-color: var(--theme-clr);
 	color: white;
 }
 /* 5 */
@@ -54,7 +58,7 @@ input {
 	outline-color: transparent;
 }
 input:focus {
-	outline-color: rgba(165, 42, 42, 0.8);
+	outline-color: var(--theme-clr);
 }
 /* 6 */
 button {
@@ -63,12 +67,12 @@ button {
 	border-color: transparent;
 	border-radius: 50px;
 	background-color: transparent;
-	border: 1px solid rgba(165, 42, 42, 0.8);
+	border: 1px solid var(--theme-clr);
 	color: rgb(27, 27, 27);
 	cursor: pointer;
 }
 button:hover {
-	background-color: rgb(60, 10, 10);
+	background-color: var(--theme-clr);
 	color: white;
 }
 a {
@@ -76,12 +80,16 @@ a {
 	padding: 8px 40px;
 	margin: 20px;
 	border: 1px solid white;
-	border-radius: 0 50px;
+	border-radius: 50px;
 	color: white;
 	text-decoration: none;
 }
+a:link {
+	color: white;
+}
 a:visited,
 a:focus,
-a:hover {
+a:hover,
+a:active {
 	color: burlywood;
 }
